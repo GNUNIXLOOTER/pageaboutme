@@ -1,0 +1,75 @@
+let menuVisible = false;
+//Función que oculta o muestra el menu
+function mostrarOcultarMenu(){
+    if(menuVisible){
+        document.getElementById("nav").classList ="";
+        menuVisible = false;
+    }else{
+        document.getElementById("nav").classList ="responsive";
+        menuVisible = true;
+    }
+}
+
+function seleccionar(){
+    //oculto el menu una vez que selecciono una opcion
+    document.getElementById("nav").classList = "";
+    menuVisible = false;
+}
+//Funcion que aplica las animaciones de las habilidades
+function efectoHabilidades(){
+    var skills = document.getElementById("skills");
+    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+    if(distancia_skills >= 300){
+        let habilidades = document.getElementsByClassName("progreso");
+        habilidades[0].classList.add("javascript");
+        habilidades[1].classList.add("html");
+        habilidades[2].classList.add("css");
+        habilidades[3].classList.add("sass");
+        habilidades[4].classList.add("php");
+        habilidades[5].classList.add("bootstrap");
+        habilidades[6].classList.add("java");
+        habilidades[7].classList.add("comunicacion");
+        habilidades[8].classList.add("trabajo");
+        habilidades[9].classList.add("creatividad");
+        habilidades[10].classList.add("dedicacion");
+        habilidades[11].classList.add("disciplina");
+        habilidades[12].classList.add("cooperación");
+        habilidades[13].classList.add("tolerancia");
+    }
+}
+
+  // Nav hamburgerburger selections
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+
+// Scroll to top selection
+const scrollUp = document.querySelector("#scroll-up");
+
+// Select nav links
+const navLink = document.querySelectorAll(".nav-link");
+
+
+// Close hamburger menu when a link is clicked
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    ul.classList.remove("show");
+  })
+);
+
+// scroll to top functionality
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+  
+});
+
+
+//detecto el scrolling para aplicar la animacion de la barra de habilidades
+window.onscroll = function(){
+    efectoHabilidades();
+
+} 
