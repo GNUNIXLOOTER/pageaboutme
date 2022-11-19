@@ -40,6 +40,7 @@ function efectoHabilidades(){
         habilidades[16].classList.add("planeacion");
         habilidades[17].classList.add("iniciativa");
         habilidades[18].classList.add("proactividad");
+        
     }
 }
 
