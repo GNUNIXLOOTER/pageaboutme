@@ -35,6 +35,11 @@ function efectoHabilidades(){
         habilidades[11].classList.add("disciplina");
         habilidades[12].classList.add("cooperación");
         habilidades[13].classList.add("tolerancia");
+        habilidades[14].classList.add("organizacion");
+        habilidades[15].classList.add("orientadoResultados");
+        habilidades[16].classList.add("planeacion");
+        habilidades[17].classList.add("iniciativa");
+        habilidades[18].classList.add("proactividad");
     }
 }
 

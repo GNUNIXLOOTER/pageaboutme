@@ -511,6 +511,66 @@ html {
     width: 80%;
   }
 }
+.skills .skill .organizacion {
+  width: 0%;
+  animation: 2s organizacion forwards;
+}
+@keyframes organizacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.skills .skill .orientadoResultados {
+  width: 0%;
+  animation: 2s orientadoResultados forwards;
+}
+@keyframes orientadoResultados {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .skill .planeacion {
+  width: 0%;
+  animation: 2s planeacion forwards;
+}
+@keyframes planeacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skills .skill .iniciativa {
+  width: 0%;
+  animation: 2s iniciativa forwards;
+}
+@keyframes iniciativa {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.skills .skill .proactividad {
+  width: 0%;
+  animation: 2s proactividad forwards;
+}
+@keyframes proactividad {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 /* SECCION CURRICULUM */
 .curriculum {
   background-color: var(--colorAzul);
