@@ -28,19 +28,20 @@ function efectoHabilidades(){
         habilidades[4].classList.add("php");
         habilidades[5].classList.add("bootstrap");
         habilidades[6].classList.add("java");
-        habilidades[7].classList.add("comunicacion");
-        habilidades[8].classList.add("trabajo");
-        habilidades[9].classList.add("creatividad");
-        habilidades[10].classList.add("dedicacion");
-        habilidades[11].classList.add("disciplina");
-        habilidades[12].classList.add("cooperación");
-        habilidades[13].classList.add("tolerancia");
-        habilidades[14].classList.add("organizacion");
-        habilidades[15].classList.add("orientadoResultados");
-        habilidades[16].classList.add("planeacion");
-        habilidades[17].classList.add("iniciativa");
-        habilidades[18].classList.add("proactividad");
-        
+        habilidades[7].classList.add("mysql");
+        habilidades[8].classList.add("comunicacion");
+        habilidades[9].classList.add("trabajo");
+        habilidades[10].classList.add("creatividad");
+        habilidades[11].classList.add("dedicacion");
+        habilidades[12].classList.add("disciplina");
+        habilidades[13].classList.add("cooperación");
+        habilidades[14].classList.add("tolerancia");
+        habilidades[15].classList.add("organizacion");
+        habilidades[16].classList.add("orientadoResultados");
+        habilidades[17].classList.add("planeacion");
+        habilidades[18].classList.add("iniciativa");
+        habilidades[19].classList.add("proactividad");
+
     }
 }
 
