@@ -422,6 +422,19 @@ html {
   }
 }
 
+.skills .skill .mysql {
+  width: 0%;
+  animation: 2s mysql forwards;
+}
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
 .skills .skill .comunicacion {
   width: 0%;
   animation: 2s comunicacion forwards;
