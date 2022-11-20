@@ -446,6 +446,18 @@ html {
     width: 50%;
   }
 }
+.skills .skill .git {
+  width: 0%;
+  animation: 2s git forwards;
+}
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
 
 .skills .skill .comunicacion {
   width: 0%;
