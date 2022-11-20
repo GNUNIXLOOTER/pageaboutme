@@ -434,6 +434,18 @@ html {
     width: 50%;
   }
 }
+.skills .skill .sqlserver {
+  width: 0%;
+  animation: 2s sqlserver forwards;
+}
+@keyframes sqlserver {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
 
 .skills .skill .comunicacion {
   width: 0%;
