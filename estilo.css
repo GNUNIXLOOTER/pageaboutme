@@ -14,8 +14,8 @@
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
-  --colorNegro: black;
-  --colorAzul:rgb(169, 207, 238);
+  --colorNegro: white;
+  --colorAzul:rgb(8, 131, 202);
 }
 
 * {
