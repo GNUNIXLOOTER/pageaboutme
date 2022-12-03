@@ -243,6 +243,7 @@ html {
   color: var(--colorNegro);
   position: relative;
   z-index: 10;
+  border-radius: 10rem;
 }
 .sobremi button .overlay {
   position: absolute;
@@ -264,6 +265,7 @@ html {
   background-color: #1cb698;
   z-index: -1;
   transition: 1s;
+  border-radius: 10rem;
 }
 .sobremi a:hover .overlay {
   width: 100%;
@@ -818,6 +820,7 @@ html {
   color: var(--colorNegro);
   position: relative;
   z-index: 10;
+  border-radius: 10rem;
 }
 .contacto button .overlay {
   position: absolute;
@@ -828,6 +831,7 @@ html {
   background-color: #1cb698;
   z-index: -1;
   transition: 1s;
+  border-radius: 10rem;
 }
 .contacto button:hover .overlay {
   width: 100%;
