@@ -19,7 +19,7 @@
       $msjCorreo .= "\r\n";
       $msjCorreo .= "Asunto: " . $subject;
       $msjCorreo .= "\r\n";
-      $msjCorreo .= "Asunto: " . $email;
+      $msjCorreo .= "Correo: " . $email;
       $msjCorreo .= "\r\n";
       $msjCorreo .= "Mensaje: " . $message;
       $msjCorreo .= "\r\n";
