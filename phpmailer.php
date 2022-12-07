@@ -1,32 +1,37 @@
 <?php
-if(isset($_POST['email'])) {
-    
-$email_to = "andresparradoparrado@gmail.com";
-$email_subject = "Contacto desde mi sitio web";
+   //Reseteamos variables a 0.
+   $nombre = $email = $subject = $mensaje = $para = $headers = $msjCorreo = NULL;
 
-// Aquí se deberían validar los datos ingresados por el usuario
-if(!isset($_POST['name']) ||
-!isset($_POST['subject']) ||
-!isset($_POST['email']) ||
-!isset($_POST['message'])) {
+   if (isset($_POST['submit'])) {
+      //Obtenemos valores input formulario
+      $nombre = $_POST['nombre'];
+      $email = $_POST['email'];
+      $subject = $_POST['subject'];   
+      $mensaje = $_POST['mensaje'];
+      $para = 'andoporto@gmail.com';
 
-echo "<b>Ocurrió un error y el mensaje no ha sido enviado. </b><br />";
-echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
-die();
-}
+      //Creamos cabecera.
+      $headers = 'From' . " " . $email . "\r\n";
+      $headers .= "Content-type: text/html; charset=utf-8";
 
-$email_message = "Detalles del formulario de contacto:\n\n";
-$email_message .= "Nombre: " . $_POST['name'] . "\n";
-$email_message .= "Apellido: " . $_POST['subject'] . "\n";
-$email_message .= "E-mail: " . $_POST['email'] . "\n";
-$email_message .= "Teléfono: " . $_POST['message'] . "\n";
+      //Componemos cuerpo correo.
+      $msjCorreo = "Nombre: " . $nombre;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Email: " . $email;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Asunto: " . $subject;
+      $msjCorreo .= "\r\n";
+      $msjCorreo .= "Mensaje: " . $mensaje;
+      $msjCorreo .= "\r\n";
 
-// Ahora se envía el e-mail usando la función mail() de PHP
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-
-echo "¡El mensaje se ha enviado con éxito!";
-}
+    if (mail($para, $subject, $msjCorreo, $headers)) {
+         echo "<script language='javascript'>
+            alert('Mensaje enviado, muchas gracias.');
+         </script>";
+    } else {
+         echo "<script language='javascript'>
+            alert('fallado');
+         </script>";
+    }
+  }
 ?>
