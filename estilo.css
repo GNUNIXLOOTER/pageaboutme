@@ -387,7 +387,7 @@ html {
 
 .skills .skill .tailwind {
   width: 0%;
-  animation: 2s sass forwards;
+  animation: 2s tailwind forwards;
 }
 @keyframes tailwind {
   0% {
@@ -413,7 +413,7 @@ html {
 
 .skills .skill .laravel {
   width: 0%;
-  animation: 2s php forwards;
+  animation: 2s laravel forwards;
 }
 @keyframes laravel {
   0% {
