@@ -26,23 +26,24 @@ function efectoHabilidades(){
         habilidades[2].classList.add("css");
         habilidades[3].classList.add("sass");
         habilidades[4].classList.add("php");
-        habilidades[5].classList.add("bootstrap");
-        habilidades[6].classList.add("java");
-        habilidades[7].classList.add("mysql");
-        habilidades[8].classList.add("sqlserver");
-        habilidades[9].classList.add("git");
-        habilidades[10].classList.add("comunicacion");
-        habilidades[11].classList.add("trabajo");
-        habilidades[12].classList.add("creatividad");
-        habilidades[13].classList.add("dedicacion");
-        habilidades[14].classList.add("disciplina");
-        habilidades[15].classList.add("cooperación");
-        habilidades[16].classList.add("tolerancia");
-        habilidades[17].classList.add("organizacion");
-        habilidades[18].classList.add("orientadoResultados");
-        habilidades[19].classList.add("planeacion");
-        habilidades[20].classList.add("iniciativa");
-        habilidades[21].classList.add("proactividad");
+        habilidades[5].classList.add("laravel");
+        habilidades[6].classList.add("bootstrap");
+        habilidades[7].classList.add("java");
+        habilidades[8].classList.add("mysql");
+        habilidades[9].classList.add("sqlserver");
+        habilidades[10].classList.add("git");
+        habilidades[11].classList.add("comunicacion");
+        habilidades[12].classList.add("trabajo");
+        habilidades[13].classList.add("creatividad");
+        habilidades[14].classList.add("dedicacion");
+        habilidades[15].classList.add("disciplina");
+        habilidades[16].classList.add("cooperación");
+        habilidades[17].classList.add("tolerancia");
+        habilidades[18].classList.add("organizacion");
+        habilidades[19].classList.add("orientadoResultados");
+        habilidades[20].classList.add("planeacion");
+        habilidades[21].classList.add("iniciativa");
+        habilidades[22].classList.add("proactividad");
 
     }
 }

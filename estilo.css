@@ -398,6 +398,19 @@ html {
   }
 }
 
+.skills .skill .laravel {
+  width: 0%;
+  animation: 2s php forwards;
+}
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .skills .skill .bootstrap {
   width: 0%;
   animation: 2s bootstrap forwards;
