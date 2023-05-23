@@ -385,6 +385,19 @@ html {
   }
 }
 
+.skills .skill .tailwind {
+  width: 0%;
+  animation: 2s sass forwards;
+}
+@keyframes sass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .skills .skill .php {
   width: 0%;
   animation: 2s php forwards;
