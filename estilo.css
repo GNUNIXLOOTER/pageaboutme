@@ -389,7 +389,7 @@ html {
   width: 0%;
   animation: 2s sass forwards;
 }
-@keyframes sass {
+@keyframes tailwind {
   0% {
     width: 0%;
   }
@@ -415,7 +415,7 @@ html {
   width: 0%;
   animation: 2s php forwards;
 }
-@keyframes php {
+@keyframes laravel {
   0% {
     width: 0%;
   }
