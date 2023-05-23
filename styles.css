@@ -987,3 +987,7 @@ footer .ir-arriba {
     width: 100%;
   }
 }
+
+.boton_sumit{
+  cursor: pointer;
+}

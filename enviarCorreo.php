@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Configurar destinatario, asunto y cabeceras
 
-    $destinatario = "tuemail@ejemplo.com"; // Cambiar por tu email
+    $destinatario = "andresparradoparrado@gmail.com"; // Cambiar por tu email
     $asunto = "Nuevo mensaje de: $name";
     
     $cabeceras  = "MIME-Version: 1.0" . "\r\n";
