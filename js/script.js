@@ -83,3 +83,10 @@ window.onscroll = function(){
     efectoHabilidades();
 
 } 
+
+
+const yearElement = document.getElementById('year'); // Obtén el elemento con el id 'year'
+const currentYear = new Date().getFullYear(); // Obtiene el año actual
+
+// Asigna el año actual al contenido del elemento
+yearElement.innerText = `© Copyright 2020 - ${currentYear}`;

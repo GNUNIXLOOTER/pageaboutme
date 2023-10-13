@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Pablo Andres | Web developer</title>
-    <link rel="stylesheet" href="styles.css">
+
+      <!-- implementacion de sweetalert2 -->
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/sweetalert2.all.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">PABLO</a>
+                <a href="/">PABLO PARRADO</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">Home</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">Acerca de mi</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
                     <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">Resumen</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">Proyectos</a></li>
@@ -53,17 +58,10 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Acerca de mi</h2>
-            <p><span>Hola, soy Pablo Andres Parrado Parrado.</span> Soy desarrollador web junior y practicante de Ingeniería
-                Informática y estoy en búsqueda de mi primera oportunidad
-                laboral como desarrollador de software, tengo habilidades en el desarrollo de aplicaciones y sistemas orientada a
-                objetos en java Desktop, JavaScript, PHP, HTML, CSS, Tailwind CSS, Css/SASS, Ajax y Git. Manejo de bases de datos
-                SQL
-                SERVER y MYSQL. Tambien algunos conocimientos en el sistema operativo Linux y Help Desk Support.</p>
+            <p><span>Hola, soy Pablo Andres Parrado Parrado,</span> desarrollador web e Ingeniero Informático y estoy en búsqueda de mi primera oportunidad laboral como desarrollador de software, tengo habilidades en el desarrollo de aplicaciones y sistemas orientada a objetos en java Desktop, JavaScript, PHP, PHP POO, HTML, CSS, Tailwind CSS, Css/SASS, Ajax y Git. Manejo de bases de datos SQL SERVER y MYSQL. También algunos conocimientos en el sistema operativo Linux y soporte técnico mesa de ayuda.</p>
             
             <p>
-                Me considero una persona responsable, creativa y autodidacta, ademas me gusta trabajar en equipo en alta disciplina
-                y
-                responsabilidad, con iniciativa para resolver problemas eficientemente y lograr las metas y objetivos trazados.
+                Me considero una persona responsable, creativa y autodidacta, además me gusta trabajar en equipo en alta disciplina y responsabilidad, con iniciativa para resolver problemas eficientemente y lograr las metas y objetivos trazados.
             </p>
 
             <div class="fila">
@@ -71,17 +69,17 @@
                 <div class="col">
                     <h3>Informacion personal</h3>
                     <ul>
-                        <li>
+                        <!--<li>
                             <strong>Teléfono</strong>
-                            +57 3015752105
-                        </li>
+                            
+                        </li>-->
                         <li>
                             <strong>Email</strong>
                             andresparradoparrado@gmail.com
                         </li>
                         <li>
                             <strong>Linkedin</strong>
-                            linkedin.com/in/pablo-andr%C3%A9s-parrado-parrado-3127161a5
+                            https://www.linkedin.com/in/pablo-andr%C3%A9s-parrado-parrado-3127161a5
                         </li>
                         <li>
                             <strong>Dirección</strong>
@@ -89,7 +87,7 @@
                         </li>
                         <li>
                             <strong>Cargo Actual</strong>
-                            <span>Help Desk Support</span>
+                            <span>Soporte Mesa de Ayuda</span>
                         </li>
                     </ul>
                 </div>
@@ -457,7 +455,7 @@
                     <div class="item izq">
                         <h4>Ingenieria Informatica</h4>
                         <span class="casa">Fundacion Universitaria Internacional de la Rioja</span>
-                        <span class="fecha">Actualmente estudiante de 8.° semestre</span>
+                        <span class="fecha">Actualmente estudiante de 9.° semestre</span>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -486,25 +484,25 @@
                 <div class="col derecha">
                     <h3>Experiencia laboral</h3>
                     <div class="item der">
-                        <h4>Help Desk Support</h4>
+                        <h4>Técnico de soporte</h4>
                         <span class="casa">ETB-Yeapdata Rama Judicial-Consejo Superior de la Judicatura</span>
-                        <span class="fecha">2022 - Actualmente Trabajando</span>
+                        <span class="fecha">Diciembre 2022 - Actualmente Trabajando</span>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Help Desk Support</h4>
+                        <h4>Técnico de soporte</h4>
                         <span class="casa">Ut Icom2018 Rama Judicial-Consejo Superior de la Judicatura</span>
-                        <span class="fecha">2021 - 2022</span>
+                        <span class="fecha">Marzo 2021 - Diciembre 2022</span>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Help Desk Support</h4>
+                        <h4>Aprendiz soporte tecnico</h4>
                         <span class="casa">Alianza Gráfica S.A.</span>
-                        <span class="fecha">2020 - 2021</span>
+                        <span class="fecha">Octubre 2020 - Marzo 2021</span>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -532,6 +530,18 @@
         <div class="contenido-seccion">
             <h2>Mis proyectos</h2>
             <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/surcos.png" alt="Imagen Calculator">
+                    <div class="overlay">
+                       <a href="https://corporacionsurcos.com.co/" target="_blank"><h3>Surcos Home</h3></a> 
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/surcosadmin.png" alt="Imagen Calculator">
+                    <div class="overlay">
+                       <a href="https://corporacionsurcos.com.co/admin" target="_blank"><h3>Surcos Administrador</h3></a> 
+                    </div>
+                </div>
                 <div class="proyecto">
                     <img src="img/calculatorBMI.png" alt="Imagen Calculator">
                     <div class="overlay">
@@ -599,22 +609,16 @@
             <div class="fila">
 
                 <!-- Formulario -->
-                <form class="col" action="enviarCorreo.php" method="post">
+                <form class="col" method="post" action="enviar.php">
                     <div >
                         
                         <input id="name" name="name" id="name" type="text" placeholder="Nombre" required>
 
-
-                        <!--<input id="name" name="name" type="number" placeholder="Número telefónico" required>-->
-                        <input id="email" name="email" type="email" placeholder="Dirección de correo" required>
+                        <input id="email" name="email" type="email" placeholder="Dirección de correo electronico" required>
 
                         <textarea id="message" name="message"  id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        
-                        <!--<button>
-                            Enviar<i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>-->
-                        <input class="overlay" style="cursor: pointer;" type="submit" name="enviar" value="Enviar">
+
+                        <input class="boton-enviar" style="cursor: pointer;" type="submit" name="enviar" value="Enviar">
                     </div>
                 </form>
                 
@@ -627,10 +631,10 @@
                                 <i class="fa-solid fa-location-dot"></i>
                                 Santander de Quilichao, Cauca
                             </li>
-                            <li>
+                           <!-- <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
                                 Contactame: +57 3015752105 
-                            </li>
+                            </li>-->
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
                                 Email: andresparradoparrado@gmail.com
@@ -657,15 +661,10 @@
         <!--<a href="#inicio" id="scroll-up" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>-->
-        <div class="redes">
-                <a href="https://www.facebook.com/andres.parrado.982" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/PABLOANDRES0605" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/gnunixlooter/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/pablo-andr%C3%A9s-parrado-parrado-3127161a5" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-        <p class="copy">&copy; Copyright 2022</p>
+
+        <p class="copy" id="year">&copy;</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -10,12 +10,13 @@
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
+  --colordiferente:#d0f1eb;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
-  --colorNegro: rgb(255, 255, 255);
-  --colorAzul:rgb(0, 0, 0);
+  --colorNegro: rgb(0, 0, 0);
+  --colorAzul:rgb(255, 255, 255);
 }
 
 * {
@@ -31,9 +32,11 @@ html {
 
 /* MENU */
 .contenedor-header {
-  background: var(--colorAzul);
+  background: var(--colordiferente);
   position: fixed;
   width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
   top: 0;
   left: 0;
   z-index: 99;
@@ -43,13 +46,15 @@ html {
   max-width: 1100px;
   margin: auto;
   display: flex;
+  font-weight: 700;
+  font-size: 1rem;
   justify-content: space-between;
   align-items: center;
   padding: 8px 20px;
 }
 .contenedor-header header .logo a {
   font-family: "Righteous";
-  font-size: 36px;
+  font-size: 1.5rem;
   color: var(--colorNegro);
   text-decoration: none;
 }
@@ -78,7 +83,7 @@ html {
 }
 
 .linea {
-  border-top: 2px solid #fff;
+  border-top: 0.2rem solid var(--colordiferente);
   height: 2px;
   
 }
@@ -87,7 +92,7 @@ html {
   background: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.4),
-      rgba(30, 35, 38, 1)
+      var(--colordiferente)
     ),
     url(img/habilidades.svg);
   background-size: cover;
@@ -98,11 +103,12 @@ html {
 }
 .inicio .contenido-banner {
   padding: 20px;
-  background-color: var(--colorAzul);
+  background-color: var(--colordiferente);
   max-width: 350px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
+  margin-top: 6rem;
 }
 .inicio .contenido-banner img {
   margin-top: 40px;
@@ -125,7 +131,7 @@ html {
   color: var(--colorNegro);
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 100%;
   width: 42px;
   height: 42px;
@@ -809,8 +815,9 @@ html {
 }
 .contacto .col {
   width: 50%;
-  padding: 15px;
+  padding: 0.5rem;
   position: relative;
+  background-color: var(--colordiferente);
 }
 .contacto .col input,
 .contacto .col textarea {
@@ -821,6 +828,7 @@ html {
   margin-bottom: 20px;
   color: #131517;
   font-size: 18px;
+  border-radius: 1rem;
 }
 .contacto button {
   cursor: pointer;
@@ -856,6 +864,7 @@ html {
 .contacto .col .info {
   position: absolute;
   top: 40%;
+  font-weight: 700;
   background-color: #94c0e4;
   padding: 20px;
   max-swidth: 350px;
@@ -874,9 +883,10 @@ html {
   margin-right: 20px;
 }
 footer {
-  background-color: var(--colorAzul);
+  background-color: var(--colordiferente);
   color: var(--colorNegro);
-  padding: 50px 0 30px 0;
+  padding: 1rem;
+font-weight: 700;
   text-align: center;
   position: relative;
   width: 100%;
@@ -888,7 +898,7 @@ footer .redes a {
   color: var(--colorNegro);
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 100%;
   width: 42px;
   height: 42px;
@@ -986,4 +996,23 @@ footer .ir-arriba {
   .contacto .fila .col {
     width: 100%;
   }
+}
+
+.boton-enviar {
+  background-color: #94c0e4; /* Color de fondo */
+  border: none; /* Quita el borde */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espacio alrededor del texto */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Quita la decoración del texto */
+  display: inline-block; /* Hace que se comporte como un bloque */
+  font-size: 16px; /* Tamaño de la fuente */
+  margin: 4px 2px; /* Margen entre el botón y otros elementos */
+  transition-duration: 0.4s; /* Duración de la transición */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 12px; /* Agrega bordes redondeados al botón */
+  font-weight: 700;
+}
+.boton-enviar:hover {
+  background-color: #7ebdf1; /* Cambia el color de fondo cuando el mouse está encima */
 }
