@@ -94,7 +94,7 @@ html {
       rgba(0, 0, 0, 0.4),
       var(--colordiferente)
     ),
-    url(img/habilidades.svg);
+    url(../img/habilidades.svg);
   background-size: cover;
   height: 100vh;
   color: var(--colorNegro);
