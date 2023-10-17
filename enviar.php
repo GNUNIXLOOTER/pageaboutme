@@ -1,9 +1,5 @@
 <?php
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
-set_error_handler("var_dump");
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario y realizar la validación
     $name = isset($_POST["name"]) ? strip_tags(trim($_POST["name"])) : '';
