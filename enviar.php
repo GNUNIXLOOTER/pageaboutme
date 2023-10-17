@@ -1,5 +1,6 @@
 <?php
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario y realizar la validación
     $name = isset($_POST["name"]) ? strip_tags(trim($_POST["name"])) : '';
