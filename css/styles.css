@@ -240,7 +240,7 @@ html {
 
 .sobremi a {
   cursor: pointer;
-  background-color: transparent;
+  background-color: var(--colordiferente);
   border: 2px solid var(--colorNegro);
   width: fit-content;
   display: block;
