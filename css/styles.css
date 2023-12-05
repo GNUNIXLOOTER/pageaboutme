@@ -832,10 +832,11 @@ html {
   display: flex;
 }
 .contacto .col {
-  width: 50%;
+  width: 100%;
   padding: 0.5rem;
   position: relative;
   background-color: var(--colordiferente);
+  border-radius: 1rem;
 }
 .contacto .col input,
 .contacto .col textarea {
@@ -886,6 +887,7 @@ html {
   background-color: #94c0e4;
   padding: 20px;
   max-swidth: 350px;
+  border-radius: 1rem;
   left: 50%;
   transform: translate(-50%, -50%);
 }
