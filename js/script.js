@@ -77,6 +77,20 @@ scrollUp.addEventListener("click", () => {
   
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+const scrollUp = document.getElementById('scroll-up');
+    // Evento de desplazamiento para mostrar u ocultar el botón
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        // Mostrar el botón cuando el desplazamiento es mayor a 100px
+        scrollUp.classList.remove('hidden');
+      } else {
+        // Ocultar el botón cuando el desplazamiento está en la parte superior
+        scrollUp.classList.add('hidden');
+      }
+    });
+  });
+
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){

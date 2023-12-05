@@ -928,7 +928,6 @@ footer .redes a {
   transition: 0.3s;
 }
 footer .ir-arriba {
-
   padding: 20px;
   font-size: 20px;
   color: #fff;
@@ -949,6 +948,54 @@ footer .ir-arriba {
   bottom: 3%;
   cursor: pointer;
 }
+
+.upward-arrow {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--colordiferente);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--color-dark);
+  transition: background-color 0.3s ease-in-out;
+  right: 0.5%;
+  bottom: 5%;
+}
+
+.upward-arrow:hover {
+  background-color: #1cb698;
+}
+
+.upward-arrow::before {
+  content: '\2191'; /* Código de la flecha hacia arriba */
+}
+
+/* Animación para la flecha */
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.upward-arrow {
+  animation: bounce 1s infinite;
+  animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	
+}
+
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 980px) {
   nav {
