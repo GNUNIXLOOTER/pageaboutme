@@ -15,8 +15,19 @@
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
-  --colorNegro: rgb(0, 0, 0);
-  --colorAzul:rgb(255, 255, 255);
+  --color-fuente: #ffffff;
+  --color-fondo: #000;
+  --color-dark: #000;
+}
+
+[tema="light"]{
+  --color-fuente: #000;
+  --color-fondo: #fff;
+}
+
+.darckness {
+  background-color:var(--color-fuente);
+  color:var(--color-fondo) 
 }
 
 * {
@@ -32,7 +43,7 @@ html {
 
 /* MENU */
 .contenedor-header {
-  background: var(--colordiferente);
+  background-color: var(--colordiferente);
   position: fixed;
   width: 100%;
   font-weight: 700;
@@ -55,7 +66,7 @@ html {
 .contenedor-header header .logo a {
   font-family: "Righteous";
   font-size: 1.5rem;
-  color: var(--colorNegro);
+  color: var(--color-dark);
   text-decoration: none;
 }
 .contenedor-header header ul {
@@ -64,7 +75,7 @@ html {
 }
 .contenedor-header header nav ul li a {
   text-align: none;
-  color: var(--colorNegro);
+  color: var(--color-dark);
   margin: 0 15px;
   padding: 3px;
   transition: 0.5s;
@@ -97,7 +108,7 @@ html {
     url(../img/habilidades.svg);
   background-size: cover;
   height: 100vh;
-  color: var(--colorNegro);
+  color: var(--color-fuente);
   display: flex;
   align-items: center;
 }
@@ -113,23 +124,25 @@ html {
 
 .inicio .contenido-banner img {
   margin-top: 40px;
-  border: 10px solid var(--colorNegro);
+  border: 10px solid var(--color-dark);
   display: block;
   width: 50%;
   margin: auto;
   border-radius: 100%;
 }
 .inicio .contenido-banner h1 {
+  color:var(--color-dark);
   margin-top: 40px;
   font-size: 42px;
   font-family: "Righteous";
 }
 .inicio .contenido-banner h2 {
+  color:var(--color-dark);
   font-size: 15px;
   font-weight: normal;
 }
 .inicio .contenido-banner .redes a {
-  color: var(--colorNegro);
+  color: var(--color-dark);
   display: inline-block;
   text-decoration: none;
   border: 1px solid #000;
@@ -241,13 +254,13 @@ html {
 .sobremi a {
   cursor: pointer;
   background-color: var(--colordiferente);
-  border: 2px solid var(--colorNegro);
+  border: 2px solid var(--color-fondo);
   width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
-  color: var(--colorNegro);
+  color: var(--color-dark);
   position: relative;
   z-index: 10;
   border-radius: 10rem;
@@ -674,21 +687,23 @@ html {
   position: relative;
 }
 .curriculum .fila .item h4 {
+  color: var(--color-dark);
   font-size: 20px;
   margin-bottom: 10px;
 }
 .curriculum .fila .item .casa {
-  color: var(--colorNegro);
+  color: var(--color-dark);
   font-size: 22px;
   font-weight: bold;
   display: block;
 }
 .curriculum .fila .item .fecha {
   display: block;
-  color: var(--colorNegro);
+  color: var(--color-dark);
   margin-bottom: 10px;
 }
 .curriculum .fila .item p {
+  color: var(--color-dark);
   line-height: 24px;
 }
 .curriculum .fila .izq {
@@ -878,6 +893,7 @@ html {
   list-style: none;
 }
 .contacto .col .info ul li {
+  color: var(--color-dark);
   margin-bottom: 20px;
 }
 .contacto .col .info ul li i {
@@ -887,7 +903,7 @@ html {
 }
 footer {
   background-color: var(--colordiferente);
-  color: var(--colorNegro);
+  color: var(--color-dark);
   padding: 1rem;
 font-weight: 700;
   text-align: center;
@@ -1018,4 +1034,66 @@ footer .ir-arriba {
 }
 .boton-enviar:hover {
   background-color: #7ebdf1; /* Cambia el color de fondo cuando el mouse está encima */
+}
+
+
+/*Botón de cambio de tema*/
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:var(--color-fuente);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color:var(--color-fondo);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--color-fuente);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-fuente);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

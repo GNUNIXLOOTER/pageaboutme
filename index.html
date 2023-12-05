@@ -19,6 +19,7 @@
 
 </head>
 <body>
+    <div class="darckness">
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
@@ -35,6 +36,12 @@
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
+                <div class="col text-center">
+                    <label id="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -714,7 +721,7 @@
                             </li>-->
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: andresparradoparrado@gmail.com
+                               <a href="mailto:">Email: andresparradoparrado@gmail.com</a>
                             </li>
                         </ul>
                     </div>
@@ -743,5 +750,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+</div>
 </body>
 </html>

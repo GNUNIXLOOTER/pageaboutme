@@ -90,3 +90,32 @@ const currentYear = new Date().getFullYear(); // Obtiene el año actual
 
 // Asigna el año actual al contenido del elemento
 yearElement.innerText = `© Copyright 2020 - ${currentYear}`;
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+  
+  function cambiaTema(ev) {
+    const temaSeleccionado = ev.target.checked ? 'light' : 'dark';
+
+    // Guardar la preferencia de tema en localStorage
+    localStorage.setItem('temaSeleccionado', temaSeleccionado);
+
+    // Aplicar el tema seleccionado al documento
+    document.documentElement.setAttribute('tema', temaSeleccionado);
+  }
+
+  colorSwitch.addEventListener('change', cambiaTema);
+
+  // Verificar si hay una preferencia de tema almacenada en localStorage
+  const temaAlmacenado = localStorage.getItem('temaSeleccionado');
+
+  if (temaAlmacenado) {
+    // Aplicar la preferencia de tema almacenada al documento
+    document.documentElement.setAttribute('tema', temaAlmacenado);
+
+    // Actualizar el interruptor de tema según la preferencia almacenada
+    colorSwitch.checked = temaAlmacenado === 'light';
+  }
+});
