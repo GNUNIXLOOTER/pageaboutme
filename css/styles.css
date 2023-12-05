@@ -27,7 +27,7 @@
 
 .darckness {
   background-color:var(--color-fuente);
-  color:var(--color-fondo) 
+  color:var(--color-fondo);
 }
 
 * {
