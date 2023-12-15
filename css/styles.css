@@ -709,10 +709,12 @@ html {
 .curriculum .fila .izq {
   border-right: 2px solid #1cb698;
   margin-right: 20px;
+  border-radius: 1rem;
 }
 .curriculum .fila .der {
   border-left: 2px solid #1cb698;
   margin-left: 20px;
+  border-radius: 1rem;
 }
 .curriculum .fila .item .conectori {
   height: 2px;
@@ -784,6 +786,7 @@ html {
   width: 100%;
   height: 20rem;
   display: block;
+  border-radius: 1rem;
 }
 .portfolio .galeria .proyecto .overlay {
   position: absolute;
@@ -800,6 +803,7 @@ html {
   letter-spacing: 3px;
   opacity: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
 }
 .portfolio .galeria .proyecto .overlay h3 {
   margin-bottom: 20px;
