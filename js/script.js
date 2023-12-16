@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
       sendEmail.setAttribute(
         'href', 
         `mailto:andresparradoparrado@gmail.com?
-        subject=${fd.get('subject')}&body=${fd.get('message')}`
+        Subject=${fd.get('subject')}&body=${fd.get('message')}`
       )
 
       sendEmail.click()
