@@ -103,7 +103,7 @@ const yearElement = document.getElementById('year'); // Obtén el elemento con e
 const currentYear = new Date().getFullYear(); // Obtiene el año actual
 
 // Asigna el año actual al contenido del elemento
-yearElement.innerText = `© Copyright 2020 - ${currentYear}`;
+yearElement.innerText = `Copyright © 2020 - ${currentYear}`;
 
 
 
