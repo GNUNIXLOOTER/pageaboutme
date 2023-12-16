@@ -133,3 +133,31 @@ document.addEventListener('DOMContentLoaded', function() {
     colorSwitch.checked = temaAlmacenado === 'light';
   }
 });
+
+
+
+//Codigo de envios de correos
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const form = document.getElementById('contactForm');
+  const sendEmail = document.getElementById('email');
+
+  function handleSendEmail(event) {
+    // Evitar que el formulario se envíe de manera predeterminada
+      event.preventDefault(); 
+
+      const fd = new FormData(this);
+
+      sendEmail.setAttribute(
+        'href', 
+        `mailto:andresparradoparrado@gmail.com?
+        subject=${fd.get('subject')}&body=${fd.get('message')}`
+      )
+
+      sendEmail.click()
+  
+  }
+
+  form.addEventListener('submit', handleSendEmail);
+
+});
