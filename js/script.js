@@ -161,3 +161,18 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', handleSendEmail);
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  var redesElement = document.querySelector('.inicio .contenido-banner .redes');
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 500) {
+      redesElement.classList.add('fixed');
+    } else {
+      redesElement.classList.remove('fixed');
+    }
+  });
+
+});
