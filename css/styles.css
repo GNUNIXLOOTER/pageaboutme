@@ -171,14 +171,13 @@ html {
 }
 .inicio .contenido-banner .redes.fixed {
   position: fixed;
-  top: 15rem;
-  right: -1rem;
-  margin: 2rem;
+  top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 1.9s ease; 
   margin-top: 3rem;
+  right: 0.7%;
 }
 .inicio .contenido-banner .redes.fixed a {
   margin: 1rem 0; 
@@ -911,14 +910,22 @@ html {
   padding: 20px 0;
 }
 .contacto .fila {
-  display: flex;
-  gap: 1rem;
+  padding: 10px;
+  background-color: var(--colordiferente);
+  max-width: 900px;
+  margin: auto;
+  border-radius: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .contacto .fila {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .contacto .col {
   width: 100%;
   padding: 0.5rem;
   position: relative;
-  background-color: var(--colordiferente);
   border-radius: 1rem;
 }
 .contacto .col input,
@@ -932,19 +939,10 @@ html {
   font-size: 18px;
   border-radius: 1rem;
 }
-.contacto button {
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid var(--colorNegro);
-  width: fit-content;
+.button-input {
+  width: 10rem;
   display: block;
-  margin: 20px auto;
-  padding: 10px 22px;
-  font-size: 16px;
-  color: var(--colorNegro);
-  position: relative;
-  z-index: 10;
-  border-radius: 10rem;
+  margin: auto;
 }
 .contacto button .overlay {
   position: absolute;
@@ -1151,22 +1149,18 @@ footer .ir-arriba {
 }
 
 .boton-enviar {
-  background-color: #94c0e4; /* Color de fondo */
-  border: none; /* Quita el borde */
-  color: white; /* Color del texto */
-  padding: 15px 32px; /* Espacio alrededor del texto */
-  text-align: center; /* Alineación del texto */
-  text-decoration: none; /* Quita la decoración del texto */
-  display: inline-block; /* Hace que se comporte como un bloque */
-  font-size: 16px; /* Tamaño de la fuente */
-  margin: 4px 2px; /* Margen entre el botón y otros elementos */
-  transition-duration: 0.4s; /* Duración de la transición */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  border-radius: 12px; /* Agrega bordes redondeados al botón */
+  background-color: #1cb698;
+  border: none; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  transition-duration: 0.4s; 
+  cursor: pointer; 
+  border-radius: 12px;
   font-weight: 700;
 }
 .boton-enviar:hover {
-  background-color: #7ebdf1; /* Cambia el color de fondo cuando el mouse está encima */
+  background-color: #75d1bf; 
 }
 
 
