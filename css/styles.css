@@ -752,16 +752,105 @@ html {
   margin-bottom: 25px;
 }
 .curriculum .fila .izquierda {
-  border-right: 2px solid #252a2e;
+  border-right: 4px solid #252a2e;
 }
 .curriculum .fila .derecha {
-  border-left: 2px solid #252a2e;
+  border-left: 4px solid #252a2e;
 }
+
+.curriculum .fila .derecha {
+  animation: breathe-der 3s ease-in-out infinite;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.curriculum .fila .izquierda {
+  animation: breathe-izq 3s ease-in-out infinite;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Estilos con animation contorno respirando para la derecha */
+@keyframes breathe-der {
+  0% {
+    border-color: #1cb698;
+  }
+  70% {
+    border-color: 0 rgba(37, 211, 102, 0);
+  }
+  100% {
+    border-color: 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* Estilos con animation contorno respirando para la izquierda */
+@keyframes breathe-izq {
+  0% {
+    border-color:  #1cb698;
+  }
+  70% {
+    border-color: 0 rgba(37, 211, 102, 0);
+  }
+  100% {
+    border-color: 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes beat-izq {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes beat-der {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Estilos con animation contorno respirando*/
+@keyframes breathe-item {
+  0% {
+    box-shadow: 0 0 0 0 #1cb698;
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/*Estilos de animacion del icono latiendo*/
+@keyframes beat-item {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .curriculum .fila .item {
   padding: 25px;
   margin-bottom: 30px;
   background-color: #94c0e4;
   position: relative;
+  animation: breathe-item 3.1s ease-in-out infinite;
 }
 .curriculum .fila .item h4 {
   color: var(--color-dark);
