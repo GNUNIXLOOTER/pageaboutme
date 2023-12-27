@@ -132,7 +132,7 @@ html {
 }
 .inicio .contenido-banner h1 {
   color:var(--color-dark);
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 30px;
   font-family: "Righteous";
 }
