@@ -18,15 +18,19 @@
   --color-fuente: #ffffff;
   --color-fondo: #000;
   --color-dark: #000;
-  --shadow-color: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  --shadow-color: 0 6px 15px rgba(0, 0, 0, 0.3); 
   --shadow-color-footer: 0 -6px 10px rgba(0, 0, 0, 0.2); 
+  --text-sobra: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  --text-sobra-suave: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 [tema="light"]{
   --color-fuente: #000;
   --color-fondo:  #fff;
-  --shadow-color: 0 6px 10px rgba(255, 255, 255, 0.2);
+  --shadow-color: 0 6px 15px rgba(255, 255, 255, 0.5);
   --shadow-color-footer: 0 -6px 10px rgba(255, 255, 255, 0.2);
+  --text-sobra: 1px 2px 4px rgba(255, 255, 255, 0.5);
+  --text-sobra-suave: 1px 2px 4px rgba(255, 255, 255, 0.2);
 }
 
 .darckness {
@@ -34,6 +38,8 @@
   color:var(--color-fondo);
   box-shadow: var(--shadow-color);
   box-shadow: var(--shadow-color-footer);
+  text-shadow: var(--text-sobra);
+  text-shadow: var(--text-sobra-suave);
 }
 
 
@@ -76,6 +82,7 @@ html {
   font-size: 1.5rem;
   color: var(--color-dark);
   text-decoration: none;
+  text-shadow: var(--text-sobra);
 }
 .contenedor-header header ul {
   display: flex;
@@ -88,6 +95,7 @@ html {
   padding: 3px;
   transition: 0.5s;
   text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .contenedor-header header nav ul li a:hover {
   color: #1cb698;
@@ -146,11 +154,13 @@ html {
   margin-top: 30px;
   font-size: 30px;
   font-family: "Righteous";
+  text-shadow: var(--text-sobra);
 }
 .inicio .contenido-banner h2 {
   color:var(--color-dark);
   font-size: 17px;
   font-weight: normal;
+  text-shadow: var(--text-sobra);
 }
 .inicio .contenido-banner .redes a {
   color: var(--color-dark);
@@ -164,6 +174,7 @@ html {
   margin: 40px 5px;
   font-size: 20px;
   transition: 0.3s;
+  text-shadow: var(--text-sobra);
 }
 .inicio .contenido-banner .redes a:hover {
   background-color: #1cb698;
@@ -264,15 +275,18 @@ html {
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
+  text-shadow: var(--text-sobra);
 }
 .sobremi .contenido-seccion p {
   font: 18px;
   line-height: 22px;
   margin-bottom: 20px;
+  text-shadow: var(--text-sobra-suave);
 }
 .sobremi .contenido-seccion p span {
   color: #1cb698;
   font-weight: bold;
+  text-shadow: var(--text-sobra-suave);
 }
 .sobremi .fila {
   display: flex;
@@ -284,23 +298,27 @@ html {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
+  text-shadow: var(--text-sobra);
 }
 .sobremi .fila .col ul {
   list-style: none;
 }
 .sobremi .fila .col ul li {
   margin: 12px 0;
+  text-shadow: var(--text-sobra-suave);
 }
 .sobremi .fila .col ul li strong {
   display: inline-block;
   color: #1cb698;
   width: 130px;
+  text-shadow: var(--text-sobra-suave);
 }
 .sobremi .fila .col ul li span {
   background-color: #1cb698;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
+  text-shadow: var(--text-sobra);
 }
 .sobremi .fila .col .contenedor-intereses {
   display: flex;
@@ -352,6 +370,7 @@ html {
   position: relative;
   z-index: 10;
   border-radius: 10rem;
+  text-shadow: var(--text-sobra);
 }
 .sobremi button .overlay {
   position: absolute;
@@ -397,6 +416,7 @@ html {
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
+  text-shadow: var(--text-sobra);
 }
 .skills .fila {
   display: flex;
@@ -409,11 +429,13 @@ html {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
+  text-shadow: var(--text-sobra);
 }
 .skills .skill > span {
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
+  text-shadow: var(--text-sobra-suave);
 }
 .skills .skill .barra-skill {
   height: 8px;
@@ -421,6 +443,9 @@ html {
   background-color: #d0f1eb;
   position: relative;
   margin-bottom: 30px;
+}
+.skills .skill .barra-skill span {
+  text-shadow: var(--text-sobra);
 }
 .skills .skill .progreso {
   background-color: #1cb698;
@@ -750,6 +775,7 @@ html {
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
+  text-shadow: var(--text-sobra);
 }
 .curriculum .fila {
   display: flex;
@@ -763,6 +789,7 @@ html {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
+  text-shadow: var(--text-sobra);
 }
 .curriculum .fila .izquierda {
   border-right: 4px solid #252a2e;
@@ -772,13 +799,13 @@ html {
 }
 
 .curriculum .fila .derecha {
-  animation: breathe-der 3s ease-in-out infinite;
+  animation: breathe-der 2.5s ease-in-out infinite;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
 .curriculum .fila .izquierda {
-  animation: breathe-izq 3s ease-in-out infinite;
+  animation: breathe-izq 2.5s ease-in-out infinite;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -863,7 +890,7 @@ html {
   margin-bottom: 30px;
   background-color: #94c0e4;
   position: relative;
-  animation: breathe-item 3.1s ease-in-out infinite;
+  text-shadow: var(--text-sobra-suave);
 }
 .curriculum .fila .item h4 {
   color: var(--color-dark);
@@ -889,11 +916,13 @@ html {
   border-right: 2px solid #1cb698;
   margin-right: 20px;
   border-radius: 1rem;
+  box-shadow: var(--shadow-color);
 }
 .curriculum .fila .der {
   border-left: 2px solid #1cb698;
   margin-left: 20px;
   border-radius: 1rem;
+  box-shadow: var(--shadow-color);
 }
 .curriculum .fila .item .conectori {
   height: 2px;
@@ -949,6 +978,7 @@ html {
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
+  text-shadow: var(--text-sobra);
 }
 .portfolio .galeria {
   display: flex;
@@ -961,12 +991,15 @@ html {
   height: fit-content;
   margin: 10px;
   cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-color);
 }
 .portfolio .galeria .proyecto img {
   width: 100%;
   height: 20rem;
   display: block;
   border-radius: 1rem;
+  box-shadow: var(--shadow-color);
 }
 .portfolio .galeria .proyecto .overlay {
   position: absolute;
@@ -1011,6 +1044,7 @@ html {
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
+  text-shadow: var(--text-sobra);
 }
 .contacto .fila {
   padding: 10px;
@@ -1018,6 +1052,7 @@ html {
   max-width: 900px;
   margin: auto;
   border-radius: 40px;
+  box-shadow: var(--shadow-color);
 }
 @media only screen and (max-width: 600px) {
   .contacto .fila {
@@ -1041,11 +1076,13 @@ html {
   color: #131517;
   font-size: 18px;
   border-radius: 1rem;
+  text-shadow: var(--text-sobra);
 }
 .button-input {
   width: 10rem;
   display: block;
   margin: auto;
+  text-shadow: var(--text-sobra);
 }
 .contacto button .overlay {
   position: absolute;
@@ -1070,7 +1107,7 @@ html {
   font-weight: 700;
   background-color: #94c0e4;
   padding: 20px;
-  max-swidth: 350px;
+  width: 350px;
   border-radius: 1rem;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1096,6 +1133,7 @@ font-weight: 700;
   position: relative;
   width: 100%;
   box-shadow: var(--shadow-color-footer);
+  text-shadow: var(--text-sobra);
 }
 footer .redes {
   margin-bottom: 20px;
@@ -1150,6 +1188,7 @@ footer .ir-arriba {
   transition: background-color 0.3s ease-in-out;
   right: 0.5%;
   bottom: 5%;
+  text-shadow: var(--text-sobra);
 }
 
 .upward-arrow:hover {
