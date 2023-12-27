@@ -18,17 +18,24 @@
   --color-fuente: #ffffff;
   --color-fondo: #000;
   --color-dark: #000;
+  --shadow-color: 0 6px 10px rgba(0, 0, 0, 0.2); 
+  --shadow-color-footer: 0 -6px 10px rgba(0, 0, 0, 0.2); 
 }
 
 [tema="light"]{
   --color-fuente: #000;
-  --color-fondo: #fff;
+  --color-fondo:  #fff;
+  --shadow-color: 0 6px 10px rgba(255, 255, 255, 0.2);
+  --shadow-color-footer: 0 -6px 10px rgba(255, 255, 255, 0.2);
 }
 
 .darckness {
   background-color:var(--color-fuente);
   color:var(--color-fondo);
+  box-shadow: var(--shadow-color);
+  box-shadow: var(--shadow-color-footer);
 }
+
 
 * {
   box-sizing: border-box;
@@ -52,6 +59,7 @@ html {
   left: 0;
   z-index: 99;
   box-shadow: 0.2rem 0.1rem #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 .contenedor-header header {
   max-width: 1100px;
@@ -102,15 +110,17 @@ html {
 .inicio {
   background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7),
       var(--colordiferente)
     ),
-    url(../img/habilidades.svg);
+    url(../img/habilidades.svg) no-repeat center;
+    
   background-size: cover;
   height: 100vh;
   color: var(--color-fuente);
   display: flex;
   align-items: center;
+  box-shadow: var(--shadow-color);
 }
 .inicio .contenido-banner {
   padding: 20px;
@@ -120,6 +130,7 @@ html {
   text-align: center;
   border-radius: 40px;
   margin-top: 6rem;
+  box-shadow: var(--shadow-color);
 }
 
 .inicio .contenido-banner img {
@@ -242,7 +253,7 @@ html {
   background-color: var(--colorAzul);
   color: var(--colorNegro);
   padding: 3rem 3rem;
-
+  box-shadow: var(--shadow-color);
 }
 .sobremi .contenido-seccion {
   max-width: 1100px;
@@ -375,6 +386,7 @@ html {
   background-color: var(--colorAzul);
   color: var(--colorNegro);
   padding: 50px 20px;
+  box-shadow: var(--shadow-color);
 }
 .skills .contenido-seccion {
   max-width: 1100px;
@@ -727,6 +739,7 @@ html {
   background-color: var(--colorAzul);
   color: var(--colorNegro);
   padding: 50px 20px;
+  box-shadow: var(--shadow-color);
 }
 .curriculum .contenido-seccion {
   max-width: 1100px;
@@ -925,6 +938,7 @@ html {
   background-color: var(--colorAzul);
   color: var(--colorNegro);
   padding: 50px 20px;
+  box-shadow: var(--shadow-color);
 }
 .portfolio .contenido-seccion {
   max-width: 1100px;
@@ -1081,6 +1095,7 @@ font-weight: 700;
   text-align: center;
   position: relative;
   width: 100%;
+  box-shadow: var(--shadow-color-footer);
 }
 footer .redes {
   margin-bottom: 20px;
@@ -1125,6 +1140,7 @@ footer .ir-arriba {
   height: 3rem;
   background-color: var(--colordiferente);
   border-radius: 50%;
+  border: 1px solid #000;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1141,7 +1157,7 @@ footer .ir-arriba {
 }
 
 .upward-arrow::before {
-  content: '\2191'; /* Código de la flecha hacia arriba */
+  content: '\2191'; 
 }
 
 /* Animación para la flecha */
