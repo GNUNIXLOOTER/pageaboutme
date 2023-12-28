@@ -210,8 +210,8 @@ html {
   background-color: var(--colordiferente);
 }
 
-/*Boton flotante*/
 
+/*Boton flotante*/
 .wrapper .button{ 
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: all 0.3s ease-out;
@@ -257,8 +257,8 @@ html {
 .wrapper .button:nth-child(1) span{
   color: #1cb698;
 }
-
 /*Final estilos boton flotante*/
+
 
 .sobremi {
   background-color: var(--colorAzul);
