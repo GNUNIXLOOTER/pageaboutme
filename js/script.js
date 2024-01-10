@@ -176,3 +176,12 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
+
+function changeLang(lang){
+
+  localStorage.setItem("yt-widget",`{"lang":"${lang}","active":true}`);
+
+  window.open(window.location.href, '_top');
+
+}

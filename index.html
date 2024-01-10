@@ -13,6 +13,13 @@
     <link rel="icon" href="img/foto.png" type="image/png">
     <link rel="shortcut icon" href="img/foto.png" type="image/png">
 
+   <!--=====================================
+	Traductor Yandex
+	======================================-->
+
+	<div id="ytWidget" style="display:none"></div>
+
+	<script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=es&widgetTheme=light&autoMode=false" type="text/javascript"></script>
 
 </head>
 <body>
@@ -20,28 +27,45 @@
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
-            <div class="logo">
+            <!--<div class="logo">
                 <a href="https://gnunixlooter.github.io/pageaboutme/">PABLO PARRADO</a>
+            </div>-->
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="https://gnunixlooter.github.io/pageaboutme/" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">RESUMEN</a></li>
                     <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
+            <div class="language">
+                <select class="btn" onchange="changeLang(this.value)">
+                    <option selected disabled>
+                         Idioma
+                    </option>
+                    
+                    <option value="es">
+                         Español
+                    </option>
+        
+                    <option value="en">
+                        English
+                    </option>
+                </select>
+            </div>
                 <div class="col text-center">
                     <label id="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
                 </div>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+
         </header>
     </div>
 
@@ -103,7 +127,7 @@
                             Santander de Quilichao, Cauca
                         </li>
                         <li>
-                            <strong>Cargo Actual</strong>
+                            <strong>Trabajo Actual</strong>
                             <span>Soporte Mesa de Ayuda</span>
                         </li>
                     </ul>
@@ -126,7 +150,7 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>● Ingenieria Informatica</h4>
+                        <h4>● Ingeniería Informática</h4>
                         <span class="casa">Fundacion Universitaria Internacional de la Rioja</span>
                         <span class="fecha">Actualmente estudiante de 9.° semestre</span>
                         <p>Calle 100 # 19 – 61
