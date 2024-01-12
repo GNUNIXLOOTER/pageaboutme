@@ -178,10 +178,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function changeLang(lang){
+function changeLang(lang) {
+  // Obtenemos la parte antes del fragmento (sin el #)
+  const url = window.location.href.split('#')[0];
 
-  localStorage.setItem("yt-widget",`{"lang":"${lang}","active":true}`);
+  // Almacenamos el idioma en localStorage
+  localStorage.setItem("yt-widget", `{"lang":"${lang}","active":true}`);
 
-  window.open(window.location.href, '_top');
-
+  // Combinamos la parte antes del fragmento y el fragmento, y recarga la página
+  window.open(url, '_top');
 }
