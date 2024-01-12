@@ -1077,14 +1077,6 @@ html {
   border-radius: 1rem;
   text-shadow: var(--text-sobra);
 }
-.button-input {
-  width: 10rem;
-  display: block;
-  margin: 0 10rem;
-  padding: 1rem;
-  font-size: 1rem;
-  text-shadow: var(--text-sobra);
-}
 .contacto button .overlay {
   position: absolute;
   top: 0;
@@ -1293,16 +1285,24 @@ footer .ir-arriba {
   }
 }
 
+.button-input {
+  width: 10rem;
+  margin: auto;
+  padding: 1rem 0;
+  font-size: 1rem;
+  text-shadow: var(--text-sobra);
+}
 .boton-enviar {
   background-color: #1cb698;
   border: none; 
   text-align: center;
   text-decoration: none;
-  display: inline-block; 
   transition-duration: 0.4s; 
   cursor: pointer; 
   border-radius: 12px;
   font-weight: 700;
+  text-shadow: var(--text-sobra);
+  box-shadow: var(--shadow-color);
 }
 .boton-enviar:hover {
   background-color: #75d1bf; 
