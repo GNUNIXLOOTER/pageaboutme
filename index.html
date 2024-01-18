@@ -43,7 +43,12 @@
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="language">
+            
+            <div class="language">   
+                <div id="messagePopup" class="popup">
+                    <span class="close" onclick="closeMessage()">&times;</span>
+                    <p id="messageContent"></p>
+                </div>   
                 <select class="btn" onchange="changeLang(this.value)">
                     <option selected disabled>
                          Idioma
@@ -58,7 +63,7 @@
                     </option>
                 </select>
             </div>
-                <div class="col text-center">
+                <div class="text-center col">
                     <label id="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
@@ -95,7 +100,7 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Acerca de mi</h2>
-            <p><span>Hola, soy Pablo Andres Parrado Parrado</span> un apasionado desarrollador web y estudiante de Ingeniería Informática en el 9° semestre. Cuento con un sólido respaldo académico y experiencia práctica en el desarrollo de páginas web, destacando en tecnologías como Java Desktop, JavaScript, PHP, Laravel, Livewire, HTML, CSS, Tailwind CSS, CSS/SASS, MySQL, SqlServer, Ajax y Git.</p>
+            <p><span>Hola, soy Pablo Andres Parrado Parrado</span> un apasionado desarrollador web y estudiante de Ingeniería Informática en el 9° semestre de la Fundación Universitaria Internacional de la Rioja. Cuento con un sólido respaldo académico y experiencia práctica en el desarrollo de páginas web, destacando en tecnologías como Java Desktop, JavaScript, PHP, Laravel, Livewire, HTML, CSS, Tailwind CSS, CSS/SASS, MySQL, SqlServer, Ajax y Git.</p>
 
             <p>
                 
@@ -658,7 +663,7 @@
     
     <!-- footer -->
     <footer>
-        <div class="upward-arrow hidden" id="scroll-up"></div>
+        <div class="hidden upward-arrow" id="scroll-up"></div>
 
         <p class="copy" id="year">&copy;</p>
     </footer>

@@ -205,3 +205,41 @@ function descargarCV() {
   // Abrimos la URL en una nueva ventana/tab
   window.open(cvURL, '_blank');
 }
+
+
+//mensaje para enviar un popup mensaje en el cambio de idioma
+function showMessage() {
+  let popup = document.getElementById('messagePopup');
+  popup.style.display = 'block';
+
+  // Obtenemos el idioma almacenado en localStorage
+  const language = JSON.parse(localStorage.getItem("yt-widget")).lang;
+
+  if (language === "es") {
+  // Puedes cambiar el mensaje aquí
+  document.getElementById('messageContent').innerText =
+   'Si decides cambiar el idioma, tendrás la opción de descargar mi currículum vitae en función del idioma seleccionado.';
+
+  } else if (language === "en") {
+  // Puedes cambiar el mensaje aquí
+  document.getElementById('messageContent').innerText =
+   'If you decide to change the language, you will have the option to download my resume based on the selected language.';
+  }
+
+  // se ajusta el tiempo en milisegundos para que el mensaje se cierre automáticamente
+  let autoCloseTimeout = 7000; // 7 segundos
+
+  // Si autoCloseTimeout es mayor que 0, establece un temporizador para cerrar automáticamente el mensaje
+  if (autoCloseTimeout > 0) {
+    setTimeout(function() {
+      closeMessage();
+    }, autoCloseTimeout);
+  }
+}
+
+console.log(showMessage());
+
+function closeMessage() {
+  let popup = document.getElementById('messagePopup');
+  popup.style.display = 'none';
+}
