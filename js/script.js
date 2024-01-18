@@ -188,3 +188,20 @@ function changeLang(lang) {
   // Combinamos la parte antes del fragmento y el fragmento, y recarga la página
   window.open(url, '_top');
 }
+
+
+function descargarCV() {
+  // Obtenemos el idioma almacenado en localStorage
+  const lang = JSON.parse(localStorage.getItem("yt-widget")).lang;
+
+  // Construimos la URL de la CV según el idioma
+  let cvURL = "";
+  if (lang === "es") {
+    cvURL = "cvpdf/CV.pdf";
+  } else if (lang === "en") {
+    cvURL = "cvpdf/CV_ENGLISH.pdf";
+  }
+
+  // Abrimos la URL en una nueva ventana/tab
+  window.open(cvURL, '_blank');
+}
