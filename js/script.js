@@ -207,6 +207,7 @@ function descargarCV() {
 }
 
 
+document.addEventListener('DOMContentLoaded', function() {
 //mensaje para enviar un popup mensaje en el cambio de idioma
 function showMessage() {
   let popup = document.getElementById('messagePopup');
@@ -237,7 +238,10 @@ function showMessage() {
   }
 }
 
-console.log(showMessage());
+showMessage()
+
+});
+
 
 function closeMessage() {
   let popup = document.getElementById('messagePopup');
