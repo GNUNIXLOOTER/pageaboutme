@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Pablo Andres | Web developer</title>
 
     <!-- Otros elementos head aquí -->
     <link rel="icon" href="img/foto.png" type="image/png">
     <link rel="shortcut icon" href="img/foto.png" type="image/png">
-    
+
     <link rel="stylesheet" href="css/styles.css">
-   <!--=====================================
+    <!--=====================================
 	Traductor Yandex
 	======================================-->
 
-	<div id="ytWidget" style="display:none"></div>
+    <div id="ytWidget" style="display:none"></div>
 
-	<script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=es&widgetTheme=light&autoMode=false" type="text/javascript"></script>
+    <script
+        src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=es&widgetTheme=light&autoMode=false"
+        type="text/javascript"></script>
 
 </head>
+
 <body>
     <div class="darckness">
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <!--<div class="logo">
+        <!-- MENU ENCABEZADO -->
+        <div class="contenedor-header">
+            <header>
+                <!--<div class="logo">
                 <a href="https://gnunixlooter.github.io/pageaboutme/">PABLO PARRADO</a>
             </div>-->
 
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="https://gnunixlooter.github.io/pageaboutme/" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">RESUMEN</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            
-            <div class="language">   
-                <div id="messagePopup" class="popup">
-                    <span class="close" onclick="closeMessage()">&times;</span>
-                    <p id="messageContent"></p>
-                </div>   
-                <select class="btn" onchange="changeLang(this.value)">
-                    <option selected disabled>
-                         Idioma
-                    </option>
-                    
-                    <option value="es">
-                         Español
-                    </option>
-        
-                    <option value="en">
-                        English
-                    </option>
-                </select>
-            </div>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="https://gnunixlooter.github.io/pageaboutme/" onclick="seleccionar()">INICIO</a>
+                        </li>
+                        <li><a href="#sobremi" onclick="seleccionar()">ACERCA</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">RESUMEN</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+
+                <div class="language">
+                    <div id="messagePopup" class="popup">
+                        <span class="close" onclick="closeMessage()">&times;</span>
+                        <p id="messageContent"></p>
+                    </div>
+                    <select class="btn" onchange="changeLang(this.value)">
+                        <option selected disabled>
+                            Idioma
+                        </option>
+
+                        <option value="es">
+                            Español
+                        </option>
+
+                        <option value="en">
+                            English
+                        </option>
+                    </select>
+                </div>
                 <div class="text-center col">
                     <label id="switch">
                         <input type="checkbox">
@@ -70,121 +77,144 @@
                     </label>
                 </div>
 
-        </header>
-    </div>
-
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/foto.png" alt="foto">
-            </div>
-            <h1>PABLO PARRADO</h1>
-            <h2>Ingeniero informático</h2>
-
-        <div class="wrapper">
-            <div class="redes">
-                <a class="button" title="Facebook" href="https://github.com/GNUNIXLOOTER" target="_blank"><div class="icon"><i class="fa-brands fa-github"></i></div></a>
-                <a class="button" title="Facebook" href="https://www.facebook.com/andres.parrado.982" target="_blank"><div class="icon"><i class="fa-brands fa-facebook-f"></i></div></a>
-                <a class="button" title="Twitter" href="https://twitter.com/PABLOANDRES0605" target="_blank"><div class="icon"><i class="fa-brands fa-twitter"></i></div></a>
-                <!--<a class="button" title="Instagram" href="https://www.instagram.com/gnunixlooter/" target="_blank"><div class="icon"><i class="fa-brands fa-instagram"></i></div></a>-->
-                <a class="button" title="Linkedin" href="https://www.linkedin.com/in/pablo-andr%C3%A9s-parrado-parrado-3127161a5" target="_blank"><div class="icon"><i class="fa-brands fa-linkedin-in"></i></div></a>
-                <a class="button" title="Descargar CV" href="#" onclick="descargarCV()"><div class="icon"><i class="fa-solid fa-download"></i></div></a>
-            </div>
+            </header>
         </div>
 
-        </div>
-    </section>
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/foto.png" alt="foto">
+                </div>
+                <h1>PABLO PARRADO</h1>
+                <h2>Ingeniero informático</h2>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Acerca de mi</h2>
-            <p><span>Hola, soy Pablo Andres Parrado,</span> un apasionado desarrollador web y estudiante de Ingeniería Informática en el 9° semestre de la Fundación Universitaria Internacional de la Rioja. Cuento con un sólido respaldo académico y experiencia práctica en el desarrollo de páginas web, destacando en tecnologías como Java Desktop, JavaScript, PHP, Laravel, Livewire, HTML, CSS, Tailwind CSS, CSS/SASS, MySQL, SqlServer, Ajax y Git.</p>
-
-            <p>
-                
-            </p>
-
-            <p>
-                Estoy activamente buscando mi primera oportunidad laboral como desarrollador de software. Mi sólida formación académica combinada con mi experiencia práctica me posiciona como un candidato capaz de aportar soluciones innovadoras y de calidad a cualquier equipo. Estoy entusiasmado por la posibilidad de contribuir al éxito de un proyecto, continuar aprendiendo y creciendo en el campo del desarrollo de software.
-            </p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Informacion personal</h3>
-                    <ul>
-                        <li>
-                            <strong>Email</strong>
-                            andresparradoparrado@gmail.com
-                        </li>
-                        <li>
-                            <strong>Ciudad</strong>
-                            Santander de Quilichao, Cauca
-                        </li>
-                        <li>
-                            <strong>Trabajo Actual</strong>
-                            <span>Soporte Mesa de Ayuda</span>
-                        </li>
-                    </ul>
+                <div class="wrapper">
+                    <div class="redes">
+                        <a class="button" title="Facebook" href="https://github.com/GNUNIXLOOTER" target="_blank">
+                            <div class="icon"><i class="fa-brands fa-github"></i></div>
+                        </a>
+                        <a class="button" title="Facebook" href="https://www.facebook.com/andres.parrado.982"
+                            target="_blank">
+                            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        </a>
+                        <a class="button" title="Twitter" href="https://twitter.com/PABLOANDRES0605" target="_blank">
+                            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                        </a>
+                        <!--<a class="button" title="Instagram" href="https://www.instagram.com/gnunixlooter/" target="_blank"><div class="icon"><i class="fa-brands fa-instagram"></i></div></a>-->
+                        <a class="button" title="Linkedin"
+                            href="https://www.linkedin.com/in/pablo-andr%C3%A9s-parrado-parrado-3127161a5"
+                            target="_blank">
+                            <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        </a>
+                        <a class="button" title="Descargar CV" href="#" onclick="descargarCV()">
+                            <div class="icon"><i class="fa-solid fa-download"></i></div>
+                        </a>
+                    </div>
                 </div>
 
             </div>
+        </section>
 
-            <a id="descargarCV" class="fa-solid fa-download"  href="#" onclick="descargarCV()" target="_blank"> Descargar CV
-                <span class="overlay"></span>
-            </a>
+        <!-- SECCION SOBRE MI -->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Acerca de mi</h2>
+                <p><span>Hola, soy Pablo Andres Parrado,</span> un apasionado desarrollador web y estudiante de
+                    Ingeniería Informática en el 9° semestre de la Fundación Universitaria Internacional de la Rioja.
+                    Cuento con un sólido respaldo académico y experiencia práctica en el desarrollo de páginas web,
+                    destacando en tecnologías como Java Desktop, JavaScript, PHP, Laravel, Livewire, HTML, CSS, Tailwind
+                    CSS, CSS/SASS, MySQL, SqlServer, Ajax y Git.</p>
 
-        </div>
-    </section> 
+                <p>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Resumen</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>● Ingeniería Informática</h4>
-                        <span class="casa">Fundacion Universitaria Internacional de la Rioja</span>
-                        <span class="fecha">Actualmente estudiante de 9.° semestre</span>
-                        <p>Calle 100 # 19 – 61
-                            Edificio Centro Empresarial 100. Oficina 801
-                            Código postal: 11001
-                            Bogotá, Colombia
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+                </p>
+
+                <p>
+                    Estoy activamente buscando mi primera oportunidad laboral como desarrollador de software. Mi sólida
+                    formación académica combinada con mi experiencia práctica me posiciona como un candidato capaz de
+                    aportar soluciones innovadoras y de calidad a cualquier equipo. Estoy entusiasmado por la
+                    posibilidad de contribuir al éxito de un proyecto, continuar aprendiendo y creciendo en el campo del
+                    desarrollo de software.
+                </p>
+
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Informacion personal</h3>
+                        <ul>
+                            <li>
+                                <strong>Email</strong>
+                                andresparradoparrado@gmail.com
+                            </li>
+                            <li>
+                                <strong>Ciudad</strong>
+                                Santander de Quilichao, Cauca
+                            </li>
+                            <li>
+                                <strong>Trabajo Actual</strong>
+                                <span>Soporte Mesa de Ayuda</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="item izq">
-                        <h4>● Diplomado en Analítica de Datos en la Gestión Empresarial </h4>
-                        <span class="casa">Fundacion Universitaria Internacional de la Rioja</span>
-                        <span class="fecha">Noviembre 2023 - Enero-2024</span>
-                        <p>Calle 100 # 19 – 61
-                            Edificio Centro Empresarial 100. Oficina 801
-                            Código postal: 11001
-                            Bogotá, Colombia
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+
+                </div>
+
+                <a id="descargarCV" class="fa-solid fa-download" href="#" onclick="descargarCV()" target="_blank">
+                    Descargar CV
+                    <span class="overlay"></span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- SECCION CURRICULUM -->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Resumen</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>● Ingeniería Informática</h4>
+                            <span class="casa">Fundacion Universitaria Internacional de la Rioja</span>
+                            <span class="fecha">Actualmente estudiante de 9.° semestre</span>
+                            <p>Calle 100 # 19 – 61
+                                Edificio Centro Empresarial 100. Oficina 801
+                                Código postal: 11001
+                                Bogotá, Colombia
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>● Analisis y Desarrollo de Sistemas de Informacion</h4>
-                        <span class="casa">Cenigraf-Sena</span>
-                        <span class="fecha">2018 - 2020</span>
-                        <p>Centro para la industria de la Comunicación Gráfica Cenigraf - SENA Regional Distrito Capital
-                            Dirección: Calle 15 # 31 - 42 - Teléfonos: 546 1500 o 596 0100 Ext.: 15 463
-                            Conmutador Nacional (60 1) 5461500 - Ext.: 15 463
-                        </p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+                        <div class="item izq">
+                            <h4>● Diplomado en Analítica de Datos en la Gestión Empresarial </h4>
+                            <span class="casa">Fundacion Universitaria Internacional de la Rioja</span>
+                            <span class="fecha">Noviembre 2023 - Enero-2024</span>
+                            <p>Calle 100 # 19 – 61
+                                Edificio Centro Empresarial 100. Oficina 801
+                                Código postal: 11001
+                                Bogotá, Colombia
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
                         </div>
-                    </div>
-                    <!--
+                        <div class="item izq">
+                            <h4>● Analisis y Desarrollo de Sistemas de Informacion</h4>
+                            <span class="casa">Cenigraf-Sena</span>
+                            <span class="fecha">2018 - 2020</span>
+                            <p>Centro para la industria de la Comunicación Gráfica Cenigraf - SENA Regional Distrito
+                                Capital
+                                Dirección: Calle 15 # 31 - 42 - Teléfonos: 546 1500 o 596 0100 Ext.: 15 463
+                                Conmutador Nacional (60 1) 5461500 - Ext.: 15 463
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <!--
                     <div class="item izq">
                         <h4>Arte y Multimedia</h4>
                         <span class="casa">Universidad de Oxford</span>
@@ -195,83 +225,83 @@
                         </div>
                     </div>
                 -->
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia laboral</h3>
-                    <div class="item der">
-                        <h4>● Técnico de Soporte</h4>
-                        <span class="casa">Yeapdata - Rama Judicial</span>
-                        <span class="fecha">Noviembre 2023 - Actualmente Trabajando</span>
-                        <p>CARRERA 19B # 84-17, OFC 403 / 404
-
-                            BOGOTÁ, COLOMBIA.
-                            
-                            INFO@YEAPDATA.COM
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
                     </div>
-                    <div class="item der">
-                        <h4>● Desarrollo web y Marketing Digital</h4>
-                        <span class="casa">Corporación de Desarrollo Social Surcos</span>
-                        <span class="fecha">Agosto 2023 - Diciembre 2023</span>
-                        <p>MANZANA 13 CASA 23 PISO 1 BARRIO JORDÁN ETAPA - IBAGUÉ - TOLIMA – COLOMBIA.
 
-                            +57 320 237 1211 - LÍNEA CENTRO DE ESCUCHA 314 228 9894.
-                            surcossurcos@gmail.com
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>● Técnico de Soporte</h4>
-                        <span class="casa">Yeapdata - Rama Judicial</span>
-                        <span class="fecha">Diciembre 2022 - Octubre 2023</span>
-                        <p>CARRERA 19B # 84-17, OFC 403 / 404
+                    <div class="col derecha">
+                        <h3>Experiencia laboral</h3>
+                        <div class="item der">
+                            <h4>● Técnico de Soporte</h4>
+                            <span class="casa">Yeapdata - Rama Judicial</span>
+                            <span class="fecha">Noviembre 2023 - Actualmente Trabajando</span>
+                            <p>CARRERA 19B # 84-17, OFC 403 / 404
 
-                            BOGOTÁ, COLOMBIA.
-                            
-                            INFO@YEAPDATA.COM
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>● Técnico de Soporte</h4>
-                        <span class="casa">UtIcom2018 - Rama Judicial</span>
-                        <span class="fecha">Marzo 2021 - Diciembre 2022</span>
-                        <p>BOGOTÁ D.C.
+                                BOGOTÁ, COLOMBIA.
 
-                            CALLE 72 NO. 7-96 PISO 3
-                            
-                            - 6016117080
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                                INFO@YEAPDATA.COM
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item der">
-                        <h4>● Aprendiz Soporte Tecnico</h4>
-                        <span class="casa">Alianza Gráfica S.A.</span>
-                        <span class="fecha">Octubre 2020 - Marzo 2021</span>
-                        <p>ZONA FRANCA PERMANENTE CONJUNTO INDUSTRIAL
-                            PARQUESUR BODEGA 5 B.
-                            
-                            KM 24 VIA VILLA RICA – CAUCA - COLOMBIA
-                            
-                            01-800-051-8989 PBX: (602) 489 89 20 - (602) 489 89 03 // 
-                            
-                            info@alianzagrafica.com 
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                        <div class="item der">
+                            <h4>● Desarrollo web y Marketing Digital</h4>
+                            <span class="casa">Corporación de Desarrollo Social Surcos</span>
+                            <span class="fecha">Agosto 2023 - Diciembre 2023</span>
+                            <p>MANZANA 13 CASA 23 PISO 1 BARRIO JORDÁN ETAPA - IBAGUÉ - TOLIMA – COLOMBIA.
+
+                                +57 320 237 1211 - LÍNEA CENTRO DE ESCUCHA 314 228 9894.
+                                surcossurcos@gmail.com
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
                         </div>
-                    </div>
-                    <!--
+                        <div class="item der">
+                            <h4>● Técnico de Soporte</h4>
+                            <span class="casa">Yeapdata - Rama Judicial</span>
+                            <span class="fecha">Diciembre 2022 - Octubre 2023</span>
+                            <p>CARRERA 19B # 84-17, OFC 403 / 404
+
+                                BOGOTÁ, COLOMBIA.
+
+                                INFO@YEAPDATA.COM
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>● Técnico de Soporte</h4>
+                            <span class="casa">UtIcom2018 - Rama Judicial</span>
+                            <span class="fecha">Marzo 2021 - Diciembre 2022</span>
+                            <p>BOGOTÁ D.C.
+
+                                CALLE 72 NO. 7-96 PISO 3
+
+                                - 6016117080
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>● Aprendiz Soporte Tecnico</h4>
+                            <span class="casa">Alianza Gráfica S.A.</span>
+                            <span class="fecha">Octubre 2020 - Marzo 2021</span>
+                            <p>ZONA FRANCA PERMANENTE CONJUNTO INDUSTRIAL
+                                PARQUESUR BODEGA 5 B.
+
+                                KM 24 VIA VILLA RICA – CAUCA - COLOMBIA
+
+                                01-800-051-8989 PBX: (602) 489 89 20 - (602) 489 89 03 //
+
+                                info@alianzagrafica.com
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <!--
                     <div class="item der">
                         <h4>Front Developer</h4>
                         <span class="casa">Nombre de Compañía</span>
@@ -282,393 +312,427 @@
                         </div>
                     </div>
                 -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Habilidades</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Habilidades técnicas</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-js"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Html</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-html5"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Css</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-css3-alt"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Sass</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-sass"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Tailwind CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                            <span>
-                                <svg fill="var(--color-fondo)" width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" 
-                                xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"/>
-                            </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Php</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-php"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Laravel</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-laravel"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Bootstrap</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-bootstrap"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-java"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>MySQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-solid fa-database"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Sql Server</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-solid fa-server"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>GitHub</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><i class="fa-brands fa-github"></i></span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Habilidades profesionales</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Disciplina</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Cooperación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Tolerancia</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Organización</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Orientación a resultados</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Planeación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Iniciativa</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-check" viewBox="0 0 16 16">
-                                        <path
-                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                                    </svg></span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>Mis proyectos</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/surcos.png" alt="Surcos image">
-                    <div class="overlay">
-                       <a href="https://corporacionsurcos.com.co/" target="_blank"><h3>Surcos Home</h3></a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/surcosadmin.png" alt="Surcos image">
-                    <div class="overlay">
-                       <a href="https://corporacionsurcos.com.co/admin" target="_blank"><h3>Surcos Administrador</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/totalk.png" alt="Totalk">
-                    <div class="overlay">
-                       <a href="http://totalk.chachasmarketplace.com/" target="_blank"><h3>To´Talk</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/job.png" alt="Jobs">
-                    <div class="overlay">
-                       <a href="https://github.com/GNUNIXLOOTER/jobs" target="_blank"><h3>Jobs</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/restaurante.png" alt="RESTAURANTEQR">
-                    <div class="overlay">
-                       <a href="https://restauranteqr.chachasmarketplace.com/" target="_blank"><h3>RESTAURANTEQR</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/contasystem.png" alt="CONTASYSTEM">
-                    <div class="overlay">
-                       <a href="https://github.com/GNUNIXLOOTER/CONTASYSTEM" target="_blank"><h3>Conta System</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/freelancer.png" alt="Imagen freelancer">
-                    <div class="overlay">
-                       <a href="https://pagefreelancerfin.netlify.app/" target="_blank"><h3>PAGE FREELANCER</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/store.png" alt="Imagen store">
-                    <div class="overlay">
-                      <a href="https://storefrontendfin.netlify.app/" target="_blank"><h3>FRONTEND STORE</h3></a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/blogcafe.png" alt="imagen blog de cafe">
-                    <div class="overlay">
-                       <a href="https://blogdecafefin.netlify.app/" target="_blank"><h3>BLOG DE CAFE</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/festivalmusic.png" alt="Imagen Festival">
-                    <div class="overlay">
-                       <a href="https://festivalmusicfin.netlify.app/" target="_blank"><h3>FESTIVAL MUSIC</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/appsalon.png" alt="Imagen Salon">
-                    <div class="overlay">
-                       <a href="https://appsalonfin.netlify.app/" target="_blank"><h3>APP SALON</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/bienesraices.png" alt="Imagen Bienes">
-                    <div class="overlay">
-                       <a href="https://1bienesraices.netlify.app/" target="_blank"><h3>BIENES RAICES</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/escolar.png" alt="Imagen escolar">
-                    <div class="overlay">
-                       <a href="https://github.com/GNUNIXLOOTER/SYSCHOOL" target="_blank"><h3>SISTEMA ESCOLAR</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/portafolio.png" alt="Imagen portafolio">
-                    <div class="overlay">
-                       <a href="#"><h3>PAGE ABOUT ME</h3></a> 
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/calculatorBMI.png" alt="Imagen Calculator">
-                    <div class="overlay">
-                       <a href="https://calculadora-peso-corporal.netlify.app/" target="_blank"><h3>BMI Calculator</h3></a> 
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>Contacto</h2>
-            <div class="fila">
-                
-                <!-- Formulario -->
-                <form class="col" id="contactForm">
+        <!-- SECCION SKILLS -->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Habilidades</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>Habilidades técnicas</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-js"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Html</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-html5"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Css</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-css3-alt"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Sass</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-sass"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Tailwind CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>
+                                        <svg fill="var(--color-fondo)" width="100%" height="100%" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Php</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-php"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Laravel</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-laravel"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Bootstrap</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-bootstrap"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Java</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-java"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MySQL</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-database"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Sql Server</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-solid fa-server"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>GitHub</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><i class="fa-brands fa-github"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Professional Skills -->
+                    <div class="col">
+                        <h3>Habilidades profesionales</h3>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Disciplina</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Cooperación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Tolerancia</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Organización</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Orientación a resultados</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Planeación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Iniciativa</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION PORTFOLIO -->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>Mis proyectos</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/surcos.png" alt="Surcos image">
+                        <div class="overlay">
+                            <a href="https://corporacionsurcos.com.co/" target="_blank">
+                                <h3>Surcos Home</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/surcosadmin.png" alt="Surcos image">
+                        <div class="overlay">
+                            <a href="https://corporacionsurcos.com.co/admin" target="_blank">
+                                <h3>Surcos Administrador</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/totalk.png" alt="Totalk">
+                        <div class="overlay">
+                            <a href="http://totalk.chachasmarketplace.com/" target="_blank">
+                                <h3>To´Talk</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/job.png" alt="Jobs">
+                        <div class="overlay">
+                            <a href="https://github.com/GNUNIXLOOTER/jobs" target="_blank">
+                                <h3>Jobs</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/restaurante.png" alt="RESTAURANTEQR">
+                        <div class="overlay">
+                            <a href="https://restauranteqr.chachasmarketplace.com/" target="_blank">
+                                <h3>RESTAURANTEQR</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/contasystem.png" alt="CONTASYSTEM">
+                        <div class="overlay">
+                            <a href="https://github.com/GNUNIXLOOTER/CONTASYSTEM" target="_blank">
+                                <h3>Conta System</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/freelancer.png" alt="Imagen freelancer">
+                        <div class="overlay">
+                            <a href="https://pagefreelancerfin.netlify.app/" target="_blank">
+                                <h3>PAGE FREELANCER</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/store.png" alt="Imagen store">
+                        <div class="overlay">
+                            <a href="https://storefrontendfin.netlify.app/" target="_blank">
+                                <h3>FRONTEND STORE</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/blogcafe.png" alt="imagen blog de cafe">
+                        <div class="overlay">
+                            <a href="https://blogdecafefin.netlify.app/" target="_blank">
+                                <h3>BLOG DE CAFE</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/festivalmusic.png" alt="Imagen Festival">
+                        <div class="overlay">
+                            <a href="https://festivalmusicfin.netlify.app/" target="_blank">
+                                <h3>FESTIVAL MUSIC</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/appsalon.png" alt="Imagen Salon">
+                        <div class="overlay">
+                            <a href="https://appsalonfin.netlify.app/" target="_blank">
+                                <h3>APP SALON</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/bienesraices.png" alt="Imagen Bienes">
+                        <div class="overlay">
+                            <a href="https://1bienesraices.netlify.app/" target="_blank">
+                                <h3>BIENES RAICES</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/escolar.png" alt="Imagen escolar">
+                        <div class="overlay">
+                            <a href="https://github.com/GNUNIXLOOTER/SYSCHOOL" target="_blank">
+                                <h3>SISTEMA ESCOLAR</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/portafolio.png" alt="Imagen portafolio">
+                        <div class="overlay">
+                            <a href="#">
+                                <h3>PAGE ABOUT ME</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/calculatorBMI.png" alt="Imagen Calculator">
+                        <div class="overlay">
+                            <a href="https://calculadora-peso-corporal.netlify.app/" target="_blank">
+                                <h3>BMI Calculator</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>Contacto</h2>
+                <div class="fila">
+
+                    <!-- Formulario -->
+                    <form class="col" id="contactForm">
 
                         <a id="email"></a>
                         <input id="subject" name="subject" type="text" placeholder="Asunto" required>
 
-                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje"
+                            required></textarea>
 
                         <div class="button-input">
                             <button class="button-input boton-enviar" type="submit" name="enviar">Enviar</button>
                         </div>
-                        
-                </form>
-                
 
+                    </form>
+
+
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- footer -->
-    <footer>
-        <div class="hidden upward-arrow" id="scroll-up"></div>
+        </section>
 
-        <p class="copy" id="year">&copy;</p>
-    </footer>
+        <!-- footer -->
+        <footer>
+            <div class="hidden upward-arrow" id="scroll-up"></div>
 
-    <script src="js/script.js"></script>
-</div>
+            <p class="copy" id="year">&copy;</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </div>
 </body>
+
 </html>
