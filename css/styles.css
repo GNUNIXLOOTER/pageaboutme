@@ -116,13 +116,9 @@ html {
 }
 /* SECCION I N I C I O */
 .inicio {
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.7),
-      var(--colordiferente)
-    ),
-    url(../img/habilidades.svg) no-repeat center;
-    
+  background-image: url(../img/habilidades.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   color: var(--color-fuente);
