@@ -189,8 +189,7 @@ function descargarCV() {
   window.open(cvUrl, "_blank");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  //mensaje para enviar un popup mensaje en el cambio de idioma
+
   function showMessage() {
     let popup = document.getElementById("messagePopup");
     popup.style.display = "block";
@@ -220,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   showMessage();
-});
+
 
 function closeMessage() {
   let popup = document.getElementById("messagePopup");
