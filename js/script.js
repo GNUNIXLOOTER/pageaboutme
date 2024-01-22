@@ -200,15 +200,15 @@ function descargarCV() {
     if (language === "es") {
       // Puedes cambiar el mensaje aquí
       document.getElementById("messageContent").innerText =
-        "Si decides cambiar el idioma, tendrás la opción de descargar mi currículum vitae en función del idioma seleccionado.";
+        "Descarga mi currículum en función del idioma seleccionado.";
     } else if (language === "en") {
       // Puedes cambiar el mensaje aquí
       document.getElementById("messageContent").innerText =
-        "If you decide to change the language, you will have the option to download my resume based on the selected language.";
+        "Download my resume based on the selected language.";
     }
 
     // se ajusta el tiempo en milisegundos para que el mensaje se cierre automáticamente
-    let autoCloseTimeout = 7000; // 7 segundos
+    let autoCloseTimeout = 5000; // 7 segundos
 
     // Si autoCloseTimeout es mayor que 0, establece un temporizador para cerrar automáticamente el mensaje
     if (autoCloseTimeout > 0) {
