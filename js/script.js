@@ -189,23 +189,23 @@ function descargarCV() {
   window.open(cvUrl, "_blank");
 }
 
-
   function showMessage() {
+
+    let languageSelect = document.querySelector('.language .click-select');
+
     let popup = document.getElementById("messagePopup");
     popup.style.display = "block";
 
     // Obtenemos el idioma almacenado en localStorage
     const language = JSON.parse(localStorage.getItem("yt-widget")).lang;
 
-    if (language === "es") {
-      // Puedes cambiar el mensaje aquí
-      document.getElementById("messageContent").innerText =
-        "Descarga mi currículum en función del idioma seleccionado.";
-    } else if (language === "en") {
-      // Puedes cambiar el mensaje aquí
-      document.getElementById("messageContent").innerText =
-        "Download my resume based on the selected language.";
-    }
+      if (language === "es") {
+        document.getElementById("messageContent").innerText =
+          "Descarga mi currículum en función del idioma seleccionado.";
+      } else if (language === "en") {
+        document.getElementById("messageContent").innerText =
+          "Download my resume based on the selected language.";
+      }
 
     // se ajusta el tiempo en milisegundos para que el mensaje se cierre automáticamente
     let autoCloseTimeout = 5000; // 7 segundos
@@ -216,10 +216,16 @@ function descargarCV() {
         closeMessage();
       }, autoCloseTimeout);
     }
+
   }
 
-  showMessage();
-
+  // Agrega un event listener al documento para detectar cuándo se hace clic en algún lugar
+document.addEventListener('click', (event) => {
+  // Verifica si el clic proviene del elemento que activa showMessage
+  if (event.target.matches('.language .click-select')) {
+    showMessage();
+  }
+});
 
 function closeMessage() {
   let popup = document.getElementById("messagePopup");
