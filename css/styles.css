@@ -1440,3 +1440,8 @@ color: var(--color-dark);
 .popup .close:hover {
   color: black;
 }
+
+.click-select{
+  box-shadow: var(--shadow-color);
+  text-shadow: var(--text-sobra);
+}
