@@ -999,7 +999,7 @@ html {
   margin: 10px;
   cursor: pointer;
   border-radius: 1rem;
-  box-shadow: var(--shadow-color);
+  box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .portfolio .galeria .proyecto img {
   width: 100%;
