@@ -301,6 +301,7 @@ html {
   color: #1cb698;
   font-weight: bold;
   text-shadow: var(--text-sobra-suave);
+  font-size: 28px;
 }
 .sobremi .fila {
   display: flex;
