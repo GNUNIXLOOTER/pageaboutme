@@ -34,11 +34,11 @@
 
 [tema="light"]{
   --color-fuente: #000;
-  --color-fondo:  #fff;
+  --color-fondo:  #868686;
  
   --shadow-color-footer: 0 -6px 10px rgba(255, 255, 255, 0.2);
-  --text-sobra: 1px 2px 4px rgba(255, 255, 255, 0.5);
-  --text-sobra-suave: 1px 2px 4px rgba(255, 255, 255, 0.5);
+  --text-sobra: 1px 2px 4px rgba(255, 255, 255, 0.509);
+  --text-sobra-suave: 1px 2px 4px rgba(106, 106, 106, 0.527);
   --imagen-fondo: linear-gradient(
     to top,
   rgba(0, 0, 0, 0.6),
