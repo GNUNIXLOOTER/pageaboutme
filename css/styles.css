@@ -37,8 +37,8 @@
   --color-fondo:  #868686;
  
   --shadow-color-footer: 0 -6px 10px rgba(255, 255, 255, 0.2);
-  --text-sobra: 1px 2px 4px rgba(255, 255, 255, 0.509);
-  --text-sobra-suave: 1px 2px 4px rgba(106, 106, 106, 0.527);
+  --text-sobra: 1px 2px 4px rgba(122, 122, 122, 0.509);
+  --text-sobra-suave: 1px 2px 4px rgba(67, 67, 67, 0.527);
   --imagen-fondo: linear-gradient(
     to top,
   rgba(0, 0, 0, 0.6),
@@ -304,6 +304,8 @@ html {
 }
 .sobremi .fila {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .sobremi .fila .col {
   width: 50%;
@@ -332,6 +334,7 @@ html {
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
+  color: #000;
   text-shadow: var(--text-sobra);
 }
 .sobremi .fila .col .contenedor-intereses {
@@ -371,7 +374,7 @@ html {
   z-index: 10;
 }
 
-.sobremi a {
+.sobremi .contenido-seccion a {
   cursor: pointer;
   background-color: var(--colordiferente);
   border: 2px solid var(--color-fondo);
@@ -467,6 +470,7 @@ html {
   top: 0;
   left: 0;
   height: 8px;
+  color: #fff;
 }
 .skills .skill .barra-skill span {
   position: absolute;
