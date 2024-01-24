@@ -811,22 +811,10 @@ html {
   text-shadow: var(--text-sobra);
 }
 .curriculum .fila .izquierda {
-  border-right: 4px solid #252a2e;
+  border-right: 4px solid #1cb698;
 }
 .curriculum .fila .derecha {
-  border-left: 4px solid #252a2e;
-}
-
-.curriculum .fila .derecha {
-  animation: breathe-der 2.5s ease-in-out infinite;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.curriculum .fila .izquierda {
-  animation: breathe-izq 2.5s ease-in-out infinite;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-left: 4px solid #1cb698;
 }
 
 /* Estilos con animation contorno respirando para la derecha */
