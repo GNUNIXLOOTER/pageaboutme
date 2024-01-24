@@ -150,7 +150,7 @@ html {
   text-align: center;
   border-radius: 40px;
   margin-top: 6rem;
-  box-shadow: var(--shadow-color);
+  box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .inicio .contenido-banner img {
@@ -923,13 +923,13 @@ html {
   border-right: 2px solid #1cb698;
   margin-right: 20px;
   border-radius: 1rem;
-  box-shadow: var(--shadow-color);
+  box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .curriculum .fila .der {
   border-left: 2px solid #1cb698;
   margin-left: 20px;
   border-radius: 1rem;
-  box-shadow: var(--shadow-color);
+  box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .curriculum .fila .item .conectori {
   height: 2px;
@@ -1058,7 +1058,7 @@ html {
   max-width: 900px;
   margin: auto;
   border-radius: 40px;
-  box-shadow: var(--shadow-color);
+  box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 600px) {
   .contacto .fila {
