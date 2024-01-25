@@ -330,13 +330,15 @@ html {
   width: 130px;
   text-shadow: var(--text-sobra-suave);
 }
-.sobremi .fila .col ul li span {
+.sobremi .fila .col a {
   background-color: #1cb698;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
   color: #000;
   text-shadow: var(--text-sobra);
+  border: none;
+
 }
 .sobremi .fila .col .contenedor-intereses {
   display: flex;
@@ -380,7 +382,6 @@ html {
   background-color: var(--colordiferente);
   border: 2px solid var(--color-fondo);
   width: fit-content;
-  display: block;
   margin: 20px auto;
   padding: 10px 22px;
   font-size: 16px;
