@@ -159,7 +159,7 @@ html {
   width: 80%;
   margin: auto;
   border-radius: 30px;
-  filter: saturate(180%);
+  filter: saturate(150%);
 }
 .inicio .contenido-banner h1 {
   color:var(--color-dark);
