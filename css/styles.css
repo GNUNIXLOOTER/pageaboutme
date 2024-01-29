@@ -205,7 +205,7 @@ html {
     top: 18rem;
   }
 }
-.inicio .contenido-banner .social-button.fixed {
+.inicio .contenido-banner .social-buttons.fixed {
   position: fixed;
   top: 6rem;
   display: flex;
@@ -215,7 +215,7 @@ html {
   margin-top: 3rem;
   right: 0.7%;
 }
-.inicio .contenido-banner .social-button.fixed a {
+.inicio .contenido-banner .social-buttons.fixed a {
   margin: 1rem 0; 
   margin-bottom: 0;
   animation: moveUpAndDown 3s infinite ease-in-out;
@@ -1560,6 +1560,7 @@ color: var(--color-dark);
   outline: none;
   width: 44px;
   height: 50px;
+  border: solid 0.1px black;
   text-decoration: none;
   border-radius: 100%;
   background: #fff;
