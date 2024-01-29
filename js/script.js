@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  let redesElement = document.querySelector(".inicio .contenido-banner .redes");
+  let redesElement = document.querySelector(".inicio .contenido-banner .social-buttons");
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 500) {
