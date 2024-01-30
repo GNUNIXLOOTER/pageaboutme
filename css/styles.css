@@ -1695,9 +1695,7 @@ color: var(--color-dark);
 
 /* efecto respirando **/
 .illustration {
-
   width: auto;
-
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
@@ -2038,8 +2036,6 @@ color: var(--color-dark);
 
 /* movimiento de campana en mensaje pupop **/
 .close {
-  display: inline-block;
-  cursor: pointer;
   transition: transform 0.3s ease-in-out;
   animation: swing 1s infinite;
 }
