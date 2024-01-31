@@ -34,28 +34,31 @@
 
 [tema="light"]{
   --color-fuente: #000;
-  --color-fondo:  #868686;
+  --color-fondo:  #d7d7d7;
  
   --shadow-color-footer: 0 -6px 10px rgba(255, 255, 255, 0.2);
   --text-sobra: 1px 2px 4px rgba(122, 122, 122, 0.509);
   --text-sobra-suave: 1px 2px 4px rgba(67, 67, 67, 0.527);
   --imagen-fondo: linear-gradient(
     to top,
-  rgba(0, 0, 0, 0.6),
-  var(--color-fuente)
+  rgba(0, 0, 0, 0.1),
+  var(--color-fuente) 
   ),
-  url(../img/habilidades.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  url(../img/moon.jpg);
+
+  --imagen-moon: 
+  var(--color-fuente)
+  url(../img/stars.jpg);
 }
 
 .darckness {
-  background-color:var(--color-fuente);
-  color:var(--color-fondo);
+  background-color: var(--color-fuente);
+  color: var(--color-fondo);
   box-shadow: var(--shadow-color);
   box-shadow: var(--shadow-color-footer);
   text-shadow: var(--text-sobra);
   text-shadow: var(--text-sobra-suave);
+  background: var(--imagen-moon);
 }
 
 
@@ -133,7 +136,7 @@ html {
 /* SECCION I N I C I O */
 .inicio {
   background: var(--imagen-fondo);
-
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
