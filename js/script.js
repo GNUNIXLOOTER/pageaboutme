@@ -14,6 +14,9 @@ function seleccionar() {
   //oculto el menu una vez que selecciono una opcion
   document.getElementById("nav").classList = "";
   menuVisible = false;
+
+    // Desmarcar el checkbox para reiniciar el menú hamburguesa
+    document.getElementById("checkbox").checked = false;
 }
 //Funcion que aplica las animaciones de las habilidades
 function efectoHabilidades() {
@@ -101,7 +104,7 @@ const currentYear = new Date().getFullYear(); // Obtiene el año actual
 yearElement.innerText = `Copyright © 2020 - ${currentYear}`;
 
 document.addEventListener("DOMContentLoaded", function () {
-  const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+  const colorSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
 
   function cambiaTema(ev) {
     const temaSeleccionado = ev.target.checked ? "light" : "dark";
