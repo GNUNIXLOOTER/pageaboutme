@@ -44,7 +44,7 @@
   rgba(0, 0, 0, 0.1),
   var(--color-fuente) 
   ),
-  url(../img/moon.jpg);
+  url(../img/habilidades.jpg);
 
   --imagen-moon: 
   var(--color-fuente)
@@ -58,7 +58,7 @@
   box-shadow: var(--shadow-color-footer);
   text-shadow: var(--text-sobra);
   text-shadow: var(--text-sobra-suave);
-  background: var(--imagen-moon);
+  /** background: var(--imagen-moon); */
 }
 
 
@@ -1744,11 +1744,12 @@ color: var(--color-dark);
   transform: translateY(-50%);
 }
 
+/*
 .hover {
   animation: hover 5s ease-in-out infinite;
   animation-fill-mode: forwards;
 }
-
+**/
 .number-one {
   transform: translateY(-10px) translateZ(0);
   opacity: 0;
