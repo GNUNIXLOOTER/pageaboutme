@@ -10,7 +10,7 @@
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
-  --colordiferente:#d0f1eb;
+  --colordiferente:#e8f1f0;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -18,12 +18,12 @@
   --color-fuente: #ffffff;
   --color-fondo: #000;
   --color-dark: #000;
+  --color-white: #fff;
   
   --color-text: #ffffff;
   --color-background: #139dff;
   --color-outline: #ff145b80;
   --color-shadow: #00000080;
-
   --shadow-color-footer: 0 -6px 10px rgba(0, 0, 0, 0.2); 
   --text-sobra: 1px 2px 4px rgba(0, 0, 0, 0.5);
   --text-sobra-suave: 1px 2px 4px rgba(0, 0, 0, 0.2);
@@ -100,7 +100,7 @@ html {
 
 /* MENU */
 .contenedor-header {
-  background-color: var(--colordiferente);
+  background-color: var(--color-white);
   position: fixed;
   width: 100%;
   font-weight: 700;
@@ -220,7 +220,7 @@ html {
 }
 .inicio .contenido-banner {
   padding: 20px;
-  background-color: var(--colordiferente);
+  background-color: var(--color-white);
   max-width: 350px;
   margin: auto;
   text-align: center;
@@ -621,7 +621,7 @@ html {
 .skills .skill .barra-skill {
   height: 8px;
   width: 80%;
-  background-color: #d0f1eb;
+  background-color: #e8f1f0;
   position: relative;
   margin-bottom: 30px;
 }
@@ -1288,7 +1288,7 @@ html {
   margin-right: 20px;
 }
 footer {
-  background-color: var(--colordiferente);
+  background-color: var(--color-white);
   color: var(--color-dark);
   padding: 1rem;
 font-weight: 700;
